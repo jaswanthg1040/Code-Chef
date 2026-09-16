@@ -54,18 +54,17 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T15:51:39.101Z  
+**Submitted:** 2026-09-16T15:55:02.007Z  
 
 ```py
 # cook your dish here
 t = int(input())
 for i in range(t):
     n,k = map(int,input().split())
-    if (2*n) >= k and n >= 0  and k >= 0:
-        print((k // 2)* 2 )
+    if (2*n) > k:
+        print(max(0,(k-(n//2))))
     else:
         print(k)
-
 ```
 
 ---
