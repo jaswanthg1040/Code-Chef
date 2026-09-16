@@ -2,7 +2,6 @@
 t = int(input())
 for i in range(t):
     n,k = map(int,input().split())
-    if (2*n) > k :
-        print(k - 1)
-    else:
-        print(k)
+    if (2*n) >= k :
+        print((k // 2)* 2 )
+    
